@@ -85,7 +85,7 @@ export default class Page extends React.Component {
                 Elevate your product to new heights with Webbee. Modern design, powerful features, and time-saving efficiency.
               </p>
               <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                <button className="bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition duration-300">
+                <button className="bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition duration-300 border border-yellow-500">
                   Purchase now
                 </button>
                 <button className="bg-transparent text-yellow-500 px-6 py-3 rounded-md border hover:bg-gray-800 border-yellow-500 transition duration-300">
@@ -93,18 +93,24 @@ export default class Page extends React.Component {
                 </button>
               </div>
             </div>
-            <div className="ml-36">
-            <img
-              alt="Rocket illustration"
-              className="h-[337px] w-[400px] rounded-3xl"
-               height="400"
-              src={Roc}
-               style={{
-                 aspectRatio: "400/400",
-                 objectFit: "cover",
-               }}
+            <div className="ml-24">
+            <div className="relative">
+               <img
+                alt="Rocket illustration"
+                className="h-[337px] w-[400px] rounded-3xl"
+                height="400"
+                src={Roc}
+                style={{
+                aspectRatio: "400/400",
+                objectFit: "cover",
+           }}
                width="400"
-            />
+          />
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-50 rounded-3xl"></div>
+    <div className="absolute inset-0 flex items-center justify-center">
+      <h2 className="text-4xl font-extrabold text-white"> </h2>
+    </div>
+  </div>
           </div>
           </div>
         </header>
