@@ -5,3 +5,7 @@
 @import 'tailwindcss/utilities';
 
 /* Your other styles go here */
+.navbar {
+  opacity: 5;
+  background-color: rgba(0,0, 0, 0.2); /* You can adjust the alpha value for transparency */
+}
