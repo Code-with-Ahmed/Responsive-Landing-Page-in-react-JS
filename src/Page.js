@@ -41,7 +41,7 @@ export default class Page extends React.Component {
 
     return (
        <div className={`bg-gradient-to-r ${this.getThemeClass(selectedTheme)} text-white min-h-screen`}>
-        <nav className="flex justify-between items-center py-4 px-8 navbar">
+        <nav className="flex justify-between items-center py-4 px-8">
           <div className="flex items-center space-x-4">
             <FlagIcon className="text-yellow-500 h-8 w-8" />
             <button className={`text-sm font-semibold hover:text-yellow-500 transition duration-300 ${selectedTheme !== 'gray' ? 'border-b-2 border-gray-800' : ''}`}>
